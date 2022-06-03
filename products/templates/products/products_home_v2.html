@@ -1,0 +1,89 @@
+{% extends 'base.html' %}
+{% block head %}
+{% load static %}
+    <head>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <link rel="stylesheet" href="{% static 'home_style_v2.css' %}" type="text/css">
+        <link rel="icon" type="image/x-icon" href="{% static 'images/favicon.ico' %}">
+    </head>
+{% endblock head %}
+{% block nav %}
+{% load crispy_forms_tags %}
+    <body>
+        <nav class="navbar background">
+            <ul class="nav-list">
+                <div class="logo">
+                    <img src= "{% static 'images/calculator.png.png' %}">
+                </div>
+                <li><a href="#cal">Home</a></li>
+                <li><a href="#more">About</a></li>
+                <li><a href="#course">AM I A RISKY BORROWER?</a></li>
+            </ul>
+
+            <div class="rightNav">
+                <input type="text" name="search" id="search">
+                <button class="btn btn-sm">Search</button>
+            </div>
+        </nav>
+{% endblock nav %}
+{% block content %}
+{% load crispy_forms_tags %}
+
+        <section class="firstsection">
+            <div class="box-main">
+                <div class="firstHalf">
+                    <h1 class="text-big" id="cal"></h1>
+                    <p class="text-small">
+                        Will YOU BE CLASSIFIED AS A RISKY BORROWER???<br>
+                        BY YOUR PEERS?
+                    </p>
+
+
+                </div>
+            </div>
+        </section>
+
+
+
+        <section class="secondsection">
+            <div class="box-main">
+                <div class="firstHalf">
+                    <h1 class="text-big" id="more">
+
+                    </h1>
+                    <p class="text-small">
+                        At Filodu, our unique algorithm will calculate
+                        your chances of getting a loan and, by so doing,
+                        help your identity if your bank is discriminating aganist you!
+                    </p>
+
+
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="paras">
+                <h1 class="sectionTag text-big"></h1>
+
+                <p class="sectionSubTag text-small">
+
+                </p>
+
+
+            </div>
+
+            <div class="thumbnail">
+                <img src= "{% static 'images/debt.png.png' %}" alt="calculator">
+            </div>
+        </section>
+{% endblock content %}
+{% block footer %}
+        <footer class="background">
+            <p class="text-footer">
+                Copyright ©-All rights are reserved
+            </p>
+
+
+        </footer>
+{% endblock footer %}

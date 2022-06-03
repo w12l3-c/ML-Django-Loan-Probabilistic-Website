@@ -1,0 +1,186 @@
+{% extends 'base.html' %}
+{% block head %}
+{% load static %}
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<link rel="stylesheet" href="{% static 'form_style.css' %}" type="text/css">
+<link rel="stylesheet" href="{% static 'about_style.css' %}" type="text/css">
+<link rel="icon" type="image/x-icon" href="{% static 'images/favicon.ico' %}">
+{% endblock head %}
+{% block nav %}
+{% load crispy_forms_tags %}
+        <div class="mx-2 my-4">
+            <div class="container-fluid ">
+                <div class="row">
+                    <div class="col-md-5">
+                        <div class="icon">
+                            <a href="../" id="">Loan Probability Calculator</a>
+                        </div>
+                    </div>
+                    <div class="col-md-7">
+                        <nav id="navbar">
+                            <ul>
+                                <h4>
+                                    <li><a href="../" id="home-nav">Home</a></li>
+                                    <li><a href="../form/" id="cal-nav">Calculator</a></li>
+                                    <li><a href="../about/" id="about-nav">About</a></li>
+                                    <li><a href="../accounts/login/" id="login-nav">Login</a></li>
+                                </h4>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+{% endblock nav %}
+{% block content %}
+{% load crispy_forms_tags %}
+<div class="about">
+    <div class="mx-12 my-9">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col"></div>
+                <div class="col-8 my-4" style="text-align: center; ">
+                    <br><h1>About</h1>
+                    <hr class="new">
+                </div>
+                <div class="col"></div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="banner">
+    <img src="{% static 'images/about-us.png' %}">
+</div>
+<br>
+<section class="issue reveal">
+    <div class="mx-12 my-9">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-6 current">
+                    <h3>Current Issue</h3>
+                    <hr>
+                    <p>In the times of the pandemic, countries are overwhelmed by the economic impact. Citizens wanted to borrow a loan but was rejected based on different reason, this can include:</p>
+                    <li>Sexism</li>
+                    <li>Racism</li>
+                    <li>Ableism</li>
+                    <li>Classism</li><br>
+                    <p>These problems might not be encountered by the majority of loan applicants. Nonetheless, it will still happen within a community, and often it can and will impact other's life heavily.</p>
+                </div>
+                <div class="col"></div>
+                <div class="col-md-5 issue_img">
+                    <br><br>
+                    <img src="{% static 'images/discrimination.jpeg' %}">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<br><br>
+<section class="goal reveal">
+    <div class="mx-12 my-9">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-5 goal_img">
+                    <br><br>
+                    <img src="{% static 'images/goal.jpeg' %}">
+                </div>
+                <div class="col"></div>
+                <div class="col-md-6 vision">
+                    <h3>Our goal</h3>
+                    <hr>
+                    <p>For the problem mentioned above, our website is determined to help those that encounter this kind of problem. Since this is a machine learning calculator, it will unbiasedly determine whether you are a risky borrower or not. Therefore, you can use this as a reference about whether the bank's decision is non discriminant. If not, then you are suggested to look for more organisations to help.</p>
+                    <p>In the meantime, if you want to or about to apply for a loan and want to know your status, feel free to use this calculator as well. This website is for anyone.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<br><br>
+<section class="help reveal">
+    <div class="mx-12 my-9">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-6 how">
+                    <h3>How you can help</h3>
+                    <hr>
+                    <p>You can help by support the organizations that help people to tackle these problems. Also, you can promote this website to other people you know that are currently in trouble.</p>
+                    <p>You can also promote this related issue to increase the awareness of this issue in the community.</p>
+                    <h6>Links:</h6>
+                    <ul >
+                        <li><a href="https://www.canada.ca/en.html" target="_blank" class="link">Canada's Government</a></li>
+                        <li><a href="https://www.crrf-fcrr.ca/en/" target="_blank" class="link">The Canadian Race Relations Foundation</a></li>
+                        <li><a href="https://canadianwomen.org/" target="_blank" class="link">Canadian Women's Foundation</a></li>
+                    </ul>
+                </div>
+                <div class="col"></div>
+                <div class="col-md-5 help_img">
+                    <br><br>
+                    <img src="{% static 'images/help.jpeg' %}">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<br><br>
+<section class="credit reveal">
+    <div class="mx-12 my-9">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-5 credit_img">
+                    <br><br>
+                    <img src="{% static 'images/johnfraser_logo.png' %}">
+                </div>
+                <div class="col"></div>
+                <div class="col-md-6 student">
+                    <h3>Credit</h3>
+                    <hr>
+                    <p>This website is a project made by a student team of three</p>
+                    <ul>
+                        <li>Wallace</li>
+                        <ul>
+                            <li>Frontend</li>
+                            <li>Backend</li>
+                            <li>Interface</li>
+                        </ul>
+                        <li>Sriram</li>
+                        <ul>
+                            <li>Machine Learning Model</li>
+                            <li>Project Planning</li>
+                        </ul>
+                        <li>Dharmik</li>
+                        <ul>
+                            <li>Homepage interface</li>
+                        </ul>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<script src="{% static 'form_script.js' %}"></script>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+{% endblock content %}
+{% block footer %}
+<section class="footer">
+    <div class="paragraph">
+        <div class="ending-title">
+            <h3>Loan Probability Calculator™</h3>
+        </div>
+        <div class="creator">
+            <h6>Made by Wallace, Sriram, Dharmik</h6>
+            <h6>Copyright ©-All rights are reserved</h6>
+        </div>
+    </div>
+    <hr>
+    <div class="contacts">
+
+        <a href="../privacy/">Privacy policy</a>
+        <br>
+    </div>
+</section>
+{% endblock footer %}

@@ -1,0 +1,227 @@
+{% extends 'base.html' %}
+{% block head %}
+{% load static %}
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<link rel="stylesheet" href="{% static 'form_style.css' %}" type="text/css">
+<link rel="stylesheet" href="{% static 'status_style.css' %}" type="text/css">
+<link rel="icon" type="image/x-icon" href="{% static 'images/favicon.ico' %}">
+{% endblock head %}
+{% block nav %}
+{% load crispy_forms_tags %}
+        <div class="mx-2 my-4">
+            <div class="container-fluid ">
+                <div class="row">
+                    <div class="col-md-5">
+                        <div class="icon">
+                            <a href="../" id="">Loan Probability Calculator</a>
+                        </div>
+                    </div>
+                    <div class="col-md-7 ">
+                        <nav id="navbar">
+                            <ul>
+                                <h4>
+                                    <li><a href="../" id="home-nav">Home</a></li>
+                                    <li><a href="../form/" id="cal-nav">Calculator</a></li>
+                                    <li><a href="../about/" id="about-nav">About</a></li>
+                                    <li><a href="../accounts/login/" id="login-nav">Login</a></li>
+                                </h4>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+{% endblock nav %}
+{% block content %}
+{% load crispy_forms_tags %}
+<div class="result_title">
+    <div class="mx-2 my-4">
+        <div class="container-fluid ">
+            <div class="row">
+                <div class="col"></div>
+                <div class="col-md-8">
+                    <br><h1>Result</h1>
+                    <hr class="new">
+                </div>
+                <div class="col"></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% if num > 0.5 %}
+<div class="result failed reveal">
+    <h3 class="color">{{ output }}</h3>
+    <br>
+    <h4>{{ prob }}</h4>
+    <br>
+</div>
+{% else %}
+<div class="result success reveal">
+    <h3>{{ output }}</h3>
+    <br>
+    <h4>{{ prob }}</h4>
+    <br>
+</div>
+{% endif %}
+
+
+<div class="result_title reveal">
+    <div class="mx-2 my-4">
+        <div class="container-fluid ">
+            <div class="row">
+                <div class="col"></div>
+                <div class="col-md-8">
+                        {% if num > 0.5 %}
+                        <section class="failed_img">
+                            <img class="img" src="{% static 'images/Risky.png' %}">
+                        </section>
+                        {% else %}
+                        <section class="success_img">
+                            <img class="img" src="{% static 'images/Success.png' %}">
+                        </section>
+                        {% endif %}
+                </div>
+                <div class="col"></div>
+            </div>
+        </div>
+    </div>
+</div>
+<br>
+<div class="mx-2 my-4">
+    <div class="container-fluid ">
+        <div class="row">
+            <div class="col-md-12">
+                {% if num > 0.5 %}
+                <section class="failed_text reveal">
+                    <hr><br>
+                    <h3>Unfortunately the model has determined you as risky borrower</h3><br>
+                    <h4>Our Recommendations:</h4>
+                    <div class="blockf_main">
+                        <div class="blockf ratio">
+                            <h4>DTI Ratio</h4>
+                            <hr>
+                            <div class="text">
+                                <img src="{% static 'images/DTI.jpeg' %}">
+                                <p>Debt to Income Ratio is an important factor in loan application. Its ratio is calculated by using monthly loan divided by monthly income. Therefore, it is better to have a ratio as low as possible. Check if you have a high debt to income ratio.</p>
+                                {% if ratio <= 28 %}
+                                    <h5 class="important" style="text-decoration: none; display: inline;">Your Debt to Income Ratio: </h5>
+                                    <h5 class="important" style="color: #18f55a; display: inline;">{{ ratio }}%</h5>
+                                {% elif ratio > 28 and ratio <= 36 %}
+                                    <h5 class="important" style="text-decoration: none; display: inline;">Your Debt to Income Ratio: </h5>
+                                    <h5 class="important" style="color: #f5f50c; display: inline;">{{ ratio }}%</h5>
+                                {% elif ratio > 36 and ratio <= 43 %}
+                                    <h5 class="important" style="text-decoration: none; display: inline;">Your Debt to Income Ratio: </h5>
+                                    <h5 class="important" style="color: #c4672d; display: inline;">{{ ratio }}%</h5>
+                                {% else %}
+                                    <h5 class="important" style="text-decoration: none; display: inline;">Your Debt to Income Ratio: </h5>
+                                    <h5 class="important" style="color: #f20000; display: inline;">{{ ratio }}%</h5>
+                                {% endif %}
+                                <br>
+                                <ul>
+                                    <li>Ideal range: below 28%</li>
+                                    <li>Acceptable range: 28-36%</li>
+                                    <li>Negotiable range: 36-43%</li>
+                                    <li>Risky range: above 43%</li>
+                                </ul>
+                                <p>See which range you fall into right now and aim for the Acceptable range, then it should greatly increase the chance of successful application</p>
+                            </div>
+                        </div>
+                        <div class="blockf delinquency">
+                            <h4>Delinquencies</h4>
+                            <hr>
+                            <div class="text">
+                                <img src="{% static 'images/delinquency.jpeg' %}">
+                                <p>Delinquencies often demonstrates the ability and trustworthiness of an applicant to pay off the loans by banks. Therefore, it is better to have little to none delinquencies. Often a serious delinquency can result with an automatically rejected application</p>
+                                <ul>
+                                    <li>Should have less than or equal to 1 serious delinquencies</li>
+                                    <li>Should have less than 2 or 3 light delinquencies</li>
+                                </ul>
+                                <p>If you found that you have too many delinquencies, you should immediately seek for professions to tackle these problems</p>
+                            </div>
+                        </div>
+                        <div class="blockf resource">
+                            <h4>More Resources</h4>
+                            <hr>
+                            <div class="text">
+                                <br>
+                                <img src="{% static 'images/resources.jpeg' %}" style="margin-top: 10px;">
+                                <p>If you want to know more about what makes you a better applicant. There are multiple credible links below that can help you out</p>
+                                <ul>
+                                    <li><a href="https://www.investopedia.com/articles/personal-finance/010516/how-apply-personal-loan.asp" target="_blank">Process of Loan Application</a></li>
+                                    <li><a href="https://www.forbes.com/advisor/personal-loans/personal-loan-requirements/" target="_blank">Forbes</a></li>
+                                    <li><a href="https://www.investopedia.com/terms/f/five-c-credit.asp" target="_blank">Investopedia</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <br><hr>
+                </section>
+                {% else %}
+                <section class="success_text reveal">
+                    <hr><br>
+                    <h3>Congratulation, you have been classified as a Safe Borrower</h3><br>
+                    <h4>Our Suggestion</h4>
+                    <br>
+                    <div class="blocks no_problem">
+                        <h4>No problem</h4>
+                        <hr>
+                        <div class="texts">
+                            <h2>Best Regards for a Successful Application</h2>
+                            <br>
+                            <img src="{% static 'images/approve.gif' %}">
+                        </div>
+                    </div>
+                    <br>
+                    <div class="blocks problem">
+                        <h4>Problems?</h4>
+                        <hr>
+                        <div class="texts">
+                            <p>If your application has been rejected multiple times, we strongly suggest you should find professional loan advisors for better judgement or other specialized organizations to dealt with any unjust decision towards your gender, sexuality, race and disability.</p>
+                            <p>We have provided a few organizations that you can contact with in our about page if that is needed.</p>
+                            <img src="{% static 'images/social.jpeg' %}">
+                        </div>
+                    </div>
+                    <br>
+                    <hr>
+                </section>
+                {% endif %}
+                <section class="thanks reveal">
+                    <br>
+                    <h4>We sincerely hope that this calculator resolves your problem!</h4>
+                    <br>
+                </section>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="{% static 'status_script.js' %}"></script>
+<script src="{% static 'form_script.js' %}"></script>
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+{% endblock content %}
+{% block footer %}
+<section class="footer">
+    <div class="paragraph">
+        <div class="ending-title">
+            <h3>Loan Probability Calculator™</h3>
+        </div>
+        <div class="creator">
+            <h6>Made by Wallace, Sriram, Dharmik</h6>
+            <h6>Copyright ©-All rights are reserved</h6>
+        </div>
+    </div>
+    <hr>
+    <div class="contacts">
+
+        <a href="../privacy/">Privacy policy</a>
+        <br>
+
+    </div>
+</section>
+{% endblock footer %}
