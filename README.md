@@ -25,3 +25,16 @@ To run the project
 - then in terminal, run `$python3 manage.py runserver`
 - it will pop out a hyperlink that said `http://127.0.0.1:8000/` and clicking on it will take you to the website on local host.
 
+## Directories
+- Static
+  - Static files holds all the css, javascript, and images
+  - It is accessed by most of the htmls in the repository
+- mlearn
+  - It is the center file in django where you create the settings for the website and the routing of the website
+- products
+  - It is the model of the machine learning and contains all the files related to it
+    - HTMLs
+    - Models
+    - Serializers
+    - Forms
+ 
