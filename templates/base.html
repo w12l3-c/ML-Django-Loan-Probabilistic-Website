@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    {% block head %}
+
+    {% endblock head %}
+    <title>Loan Probability Calculator</title>
+</head>
+<body>
+    <header>
+        {% block nav %}
+        <nav>
+            <ul style="list-style-type: none; margin: 0; padding: 0;">
+                <li style="display: inline;"><a href="#Home">Home</a></li>
+                <li style="display: inline;"><a href="#About">About</a></li>
+                <li style="display: inline;"><a href="login/">Login</a></li>
+            </ul>
+        </nav>
+        {% endblock nav %}
+    </header>
+    <main>
+        {% block content %}
+
+        {% endblock content %}
+    </main>
+    <footer>
+        {% block footer %}
+
+        {% endblock footer %}
+    </footer>
+</body>
+</html>
