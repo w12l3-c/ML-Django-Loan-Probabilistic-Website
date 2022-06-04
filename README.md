@@ -1,6 +1,6 @@
 # README
-This project is made from machine learning model and python package Django to make it a web service. The objective is to let the user input some of their finacial information and the model will determine their status as safe or risky for loan application.<br>
-It is created as a school project.
+This project is made from machine learning model and python package Django to make it a web service. The objective is to let the user input some of their finacial information and the model will determine their status as safe or risky for loan application.<br><br>
+It is created as a school project and it will not serve any commerical purpose
 
 ## Model
 It is a Machine Learning Model that predicts whether a user is a safe or risky borrower.
