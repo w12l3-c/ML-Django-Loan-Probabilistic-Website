@@ -23,13 +23,13 @@ Some necessary files:
 - pandas
 
 ## To run the project
-To run the project
-- First create a directory and fork all the files into that directory
-- Open your terminal/window prompt either in IDE or Computer
-- Move to the directory you just made by `cd #name_of_the_file`
-- Run ```dir``` in windows or ```ls``` in MacOS or ```-lh``` in Linux to make sure `manage.py` file is in that directory
-- Run `$python3 manage.py runserver`
-- It will pop out a hyperlink that said `http://127.0.0.1:8000/` and clicking on it will take you to the website on local host.
+Procedure:
+1. First create a directory and fork all the files into that directory
+2. Open your terminal/window prompt either in IDE or Computer
+3. Move to the directory you just made by `cd #name_of_the_file`
+4. Run ```dir``` in windows or ```ls``` in MacOS or ```-lh``` in Linux to make sure `manage.py` file is in that directory
+5. Run `$python3 manage.py runserver`
+6. It will pop out a hyperlink that said `http://127.0.0.1:8000/` and clicking on it will take you to the website on local host.
 
 ## Directories
 - static
