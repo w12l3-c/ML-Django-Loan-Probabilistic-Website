@@ -45,4 +45,6 @@ To run the project
     - Forms
 - oauth
   - It is used for Authentication with Google social accounts
+- templates
+  - It holds other html templates except from the ones in product
  
