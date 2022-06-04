@@ -8,7 +8,7 @@ It is a Machine Learning Model that predicts whether a user is a safe or risky b
 
 ## Django
 Django is a Python Web Framework that can use python languages to build APIs, it is one of the most used python web framework along with Flask. It is also has a lot of other extension frameworks that help different aspects of development<br>
-For more information: [[django official website](https://www.djangoproject.com/)]
+For more information: [django official website](https://www.djangoproject.com/)
 
 ## Installing packages
 To install all the required python packages for the computer to run, you can run the following code in your coding environment terminal.<br>
