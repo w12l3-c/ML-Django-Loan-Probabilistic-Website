@@ -37,6 +37,7 @@ cycler
 debugpy
 decorator
 defusedxml
+django-allauth
 django-cors-headers
 django-crispy-forms
 django-filter
