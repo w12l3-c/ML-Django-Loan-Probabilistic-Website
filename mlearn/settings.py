@@ -30,9 +30,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-(q5+oy+aavi_0e=53kx69(6s@t5a*v3_$5js#k5y^r941up&xg'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['https://loan-calculator-classifer.herokuapp.com/', '.herokuapp.com']
 
 # Application definition
 
@@ -135,11 +135,12 @@ USE_TZ = True
 PROJECT_DIR = os.path.dirname(__file__)
 STATIC_URL = '/static/'
 
+STATIC_ROOT = BASE_DIR / 'staticfiles-cdn'
+
 STATICFILES_DIRS = [
     BASE_DIR / 'static',
 ]
 
-STATIC_ROOT = BASE_DIR / 'staticfiles-cdn'
 STATICFILES_STORAGE = "django.contrib.staticfiles.storage.StaticFilesStorage"
 
 CRISPY_TEMPLATE_PACK = 'bootstrap4'
