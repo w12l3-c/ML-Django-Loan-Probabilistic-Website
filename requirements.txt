@@ -27,9 +27,6 @@ flatbuffers
 fonttools
 future
 gast
-google-auth
-google-auth-oauthlib
-google-pasta
 grpcio
 gunicorn
 gym-notices
@@ -68,8 +65,6 @@ nest-asyncio
 networkx
 notebook
 numpy
-oauthlib
-opencv-python
 opt-einsum
 orjson
 packaging
@@ -107,7 +102,6 @@ pyzmq
 qtconsole
 renoir
 requests
-requests-oauthlib
 rs
 ruamel.yaml
 ruamel.yaml.clib
