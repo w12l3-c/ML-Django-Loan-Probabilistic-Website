@@ -23,7 +23,11 @@
                                     <li><a href="../" id="home-nav">Home</a></li>
                                     <li><a href="../form/" id="cal-nav">Calculator</a></li>
                                     <li><a href="../about/" id="about-nav">About</a></li>
-                                    <li><a href="../accounts/login/" id="login-nav">Login</a></li>
+                                    {% if user.is_authenticated %}
+                                        <li><a href="../accounts/logout/" id="logout-nav">Logout</a></li>
+                                    {% else %}
+                                        <li><a href="../accounts/login/" id="login-nav">Login</a></li>
+                                    {% endif %}
                                 </h4>
                             </ul>
                         </nav>
@@ -139,9 +143,10 @@
                     <ul>
                         <li>Wallace</li>
                         <ul>
-                            <li>Frontend</li>
-                            <li>Backend</li>
-                            <li>Interface</li>
+                            <li>Frontend UI</li>
+                            <li>Backend Django</li>
+                            <li>Interface styling</li>
+                            <li>Integration</li>
                         </ul>
                         <li>Sriram</li>
                         <ul>
@@ -150,7 +155,7 @@
                         </ul>
                         <li>Dharmik</li>
                         <ul>
-                            <li>Homepage interface</li>
+                            <li>Initial Homepage interface</li>
                         </ul>
                     </ul>
                 </div>

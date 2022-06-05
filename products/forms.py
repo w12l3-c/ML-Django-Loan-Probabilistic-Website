@@ -9,6 +9,9 @@ from .models import Approval2
 
 
 # Usual Model Form
+# This file codes for the form of the parameters of our machine learning model and will display it as a form to user
+
+# Ultimately used
 class ApprovalForm(forms.ModelForm):
     firstname = forms.CharField(
         label="First Name:",
@@ -70,6 +73,8 @@ class ApprovalForm(forms.ModelForm):
         fields = '__all__'
 
 
+# Another Machine learning form that could be implanted in the future to suit different scenarios better
+# Not used
 class ApprovalForm2(forms.ModelForm):
     firstname = forms.CharField(
         label="First Name:",

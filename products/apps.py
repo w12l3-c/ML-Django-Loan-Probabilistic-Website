@@ -1,4 +1,5 @@
 from django.apps import AppConfig
+# This is an auto generated file for app configuration
 
 
 class ProductsConfig(AppConfig):

@@ -3,9 +3,11 @@ from django.conf import settings
 
 
 # Create your models here.
+# This page is where we define the parameters our machine learning objects has to have
 User = settings.AUTH_USER_MODEL
 
 
+# Not used
 class MLAlgorithm(models.Model):
     Gender_choices = (
         ('Male', 'Male'),
@@ -48,6 +50,7 @@ class MLAlgorithm(models.Model):
     property_area = models.CharField(max_length=15, choices=PropertyArea_choices)
 
 
+# Not used
 class MLAlgorithmStatus(models.Model):
     status = models.CharField(max_length=128)
     active = models.BooleanField()
@@ -56,12 +59,14 @@ class MLAlgorithmStatus(models.Model):
     parent_mlalgorithm = models.ForeignKey(MLAlgorithm, on_delete=models.CASCADE, related_name="status")
 
 
+# Not used
 class MLEndpoint(models.Model):
     name = models.CharField(max_length=128)
     owner = models.CharField(max_length=128)
     created_at = models.DateTimeField(auto_now_add=True, blank=True)
 
 
+# Not used
 class MLRequest(models.Model):
     input_data = models.CharField(max_length=10000)
     full_response = models.CharField(max_length=10000)
@@ -71,6 +76,7 @@ class MLRequest(models.Model):
     parent_mlalgorithm = models.ForeignKey(MLAlgorithm, on_delete=models.CASCADE)
 
 
+# This is the one ultimately used
 class Approval(models.Model):
     Gender_choices = (
         ('Male', 'Male'),
@@ -95,6 +101,8 @@ class Approval(models.Model):
     serious_delinquencies = models.FloatField()
 
 
+# Future implementation
+# Not used
 class Approval2(models.Model):
     Gender_choices = (
         ('Male', 'Male'),

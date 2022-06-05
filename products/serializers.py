@@ -7,7 +7,10 @@ from .models import MLAlgorithmStatus
 from .models import Approval
 from .models import Approval2
 
+# This file is to serialize the parameters defined in the models, which can then be used for REST applications
 
+
+# Not used
 class MLAlgorithmSerializer(serializers.ModelSerializer):
     current_status = serializers.SerializerMethodField(read_only=True)
 
@@ -34,6 +37,7 @@ class MLAlgorithmSerializer(serializers.ModelSerializer):
         fields = '__all__'
 
 
+# Not used
 class MLEndpointSerializer(serializers.ModelSerializer):
     class Meta:
         model = MLEndpoint
@@ -41,6 +45,7 @@ class MLEndpointSerializer(serializers.ModelSerializer):
         fields = read_only_fields
 
 
+# Not used
 class MLRequestSerializer(serializers.ModelSerializer):
     class Meta:
         model = MLRequest
@@ -63,6 +68,7 @@ class MLRequestSerializer(serializers.ModelSerializer):
         )
 
 
+# Not used
 class MLAlgorithmStatusSerializer(serializers.ModelSerializer):
     class Meta:
         model = MLAlgorithmStatus
@@ -70,12 +76,15 @@ class MLAlgorithmStatusSerializer(serializers.ModelSerializer):
         fields = ("id", "active", "status", "created_by", "created_at", "parent_mlalgorithm")
 
 
+# Ultimately used
 class ApprovalSerializer(serializers.ModelSerializer):
     class Meta:
         model = Approval
         fields = '__all__'
 
 
+# Future implementation
+# Not used
 class ApprovalSerializer2(serializers.ModelSerializer):
     class Meta:
         model = Approval2

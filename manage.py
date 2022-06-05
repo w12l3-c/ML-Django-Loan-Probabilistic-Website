@@ -1,5 +1,6 @@
 #!/usr/bin/env python
 """Django's command-line utility for administrative tasks."""
+"""This is the most important file in the entire project as it is used as a developers tool"""
 import os
 import sys
 

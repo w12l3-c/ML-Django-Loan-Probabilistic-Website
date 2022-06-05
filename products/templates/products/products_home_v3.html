@@ -9,8 +9,9 @@
                   content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
             <meta http-equiv="X-UA-Compatible" content="ie=edge">
             <link rel="icon" type="image/x-icon" href="{% static 'images/favicon.ico' %}">
+            <link rel="stylesheet" type="text/css" href="{% static 'home_style_v3.css' %}">
 
-            <style>
+            <!--<style>
                 * {
                     margin: 0;
                     padding: 0;
@@ -199,28 +200,26 @@
                     color: lightskyblue;
                 }
 
-            </style>
+            </style> -->
         </head>
         <body>
-            <nav class="navbar background">
+            <nav class="navbar background navbar-fixed-top">
                 <ul class="nav-list">
                     <div class="logo">
                         <img src= "{% static 'images/calculator.png.png' %}">
+                        <a href="../" id="">Loan Probability Calculator</a>
                     </div>
-                    <li><a href="#cal">Home</a></li>
-                    <li><a href="/form/">Calculator</a></li>
-                    <li><a href="/about/">About</a></li>
-                    {% if user.is_authenticated %}
-                        <li><a href="/accounts/login/">Login</a></li>
-                    {% else %}
-                        <li><a href="/accounts/logout/">Logout</a></li>
-                    {% endif %}
+                    <div class="nav-item">
+                        <li><a href="../">Home</a></li>
+                        <li><a href="/form/">Calculator</a></li>
+                        <li><a href="/about/">About</a></li>
+                        {% if user.is_authenticated %}
+                            <li><a href="../accounts/logout/">Logout</a></li>
+                        {% else %}
+                            <li><a href="../accounts/login/">Login</a></li>
+                        {% endif %}
+                    </div>
                 </ul>
-
-                <div class="rightNav">
-                    <input type="text" name="search" id="search">
-                    <button class="btn btn-sm">Search</button>
-                </div>
             </nav>
 
             <section class="firstsection">
@@ -228,17 +227,21 @@
                     <div class="firstHalf">
                         <h1 class="text-big" id="cal"></h1>
                         <p class="text-small">
+                            <br>
                             {% if user.is_authenticated %}
-                                Welcome {{user.username}}
+                                Welcome {{user.username}}!!
                             {% endif %}
-                            Will YOU BE CLASSIFIED AS <br>A RISKY BORROWER???<br>BY YOUR PEERS??
+                            <br>
+                            Check out Your Probability of getting a Loan!!!
+                            <br>
+                            ARE YOU A SAFE BORROWER???
+                            <br>
+                            OR A RISKY BORROWER???
                         </p>
 
                     </div>
                 </div>
             </section>
-
-
 
             <section class="secondsection">
                 <div class="box-main">
@@ -249,7 +252,7 @@
 
                             At Filodu, our unique <br>algorithm will calculate<br>
                             your chances of getting a <br>loan and, by so doing,<br>
-                            help your identity if<br> your bank is discriminating <br>aganist you!
+                            help your identity if<br> your bank is discriminating <br>against you!
                         </p>
                     </div>
                 </div>
@@ -267,12 +270,22 @@
                 </div>
             </section>
 
-            <footer class="background">
-                <p class="text-footer">
-                    COPYRIGHTS
-                </p>
-
-            </footer>
+            <section class="footer">
+                <div class="paragraph">
+                    <div class="ending-title">
+                        <h3>Loan Probability Calculator™</h3>
+                    </div>
+                <div class="creator">
+                    <h6>Made by Wallace, Sriram, Dharmik</h6>
+                    <h6>Copyright ©-All rights are reserved</h6>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="contacts">
+                        <a href="../privacy/">Privacy policy</a>
+                        <br>
+                    </div>
+            </section>
         </body>
 
         </html>

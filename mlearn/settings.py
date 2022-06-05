@@ -9,9 +9,11 @@ https://docs.djangoproject.com/en/4.0/topics/settings/
 For the full list of settings and their values, see
 https://docs.djangoproject.com/en/4.0/ref/settings/
 
-Superuser: Admin
-Pass: SuperPass
+"""
 
+"""
+This page is for setting up the environment for the entire web project and it is how
+Django determine external packages, directories and the format to access different files
 """
 
 from pathlib import Path
@@ -47,7 +49,6 @@ INSTALLED_APPS = [
     'django.contrib.sites',
     'rest_framework',
     'products',
-    'oauth',
     'crispy_forms',
     'allauth',
     'allauth.account',
