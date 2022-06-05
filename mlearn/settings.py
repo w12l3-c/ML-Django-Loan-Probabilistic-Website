@@ -32,7 +32,7 @@ SECRET_KEY = 'django-insecure-(q5+oy+aavi_0e=53kx69(6s@t5a*v3_$5js#k5y^r941up&xg
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['https://loan-calculator-classifer.herokuapp.com/', '.herokuapp.com']
+ALLOWED_HOSTS = ['https://loan-calculator-classifier.herokuapp.com/', '.herokuapp.com']
 
 # Application definition
 
