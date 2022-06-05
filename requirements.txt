@@ -1,5 +1,4 @@
 Django
-
 aioitertools
 appnope
 argon2-cffi
@@ -10,7 +9,6 @@ backcall
 beautifulsoup4
 bleach
 brewer2mpl
-bs4
 cachetools
 certifi
 cffi
@@ -34,7 +32,6 @@ google-auth-oauthlib
 google-pasta
 grpcio
 gunicorn
-gym
 gym-notices
 h11
 h2
@@ -54,13 +51,6 @@ jedi
 jmespath
 joblib
 jsonschema
-jupyter
-jupyter-client
-jupyter-console
-jupyter-core
-jupyterlab-pygments
-jupyterlab-widgets
-keras
 kiwisolver
 latexcodec
 libclang
@@ -104,7 +94,6 @@ pybtex
 pycparser
 pydantic
 pydash
-pygame
 pymongo
 pyparsing
 pyrsistent
