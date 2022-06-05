@@ -43,8 +43,8 @@ Procedure:
     - Models
     - Serializers
     - Forms
-- oauth
-  - It is used for Authentication with Google social accounts
 - templates
   - It holds other html templates except from the ones in product
  
+ ## User Guide
+ Please go to the Wiki page of this repository
