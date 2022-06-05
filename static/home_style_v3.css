@@ -1,0 +1,292 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Alfa+Slab+One&family=Assistant:wght@300&family=IBM+Plex+Sans:wght@200&family=Lato:wght@300&family=Noto+Sans+Display:wght@300;400&family=Odibee+Sans&family=Oswald:wght@500&family=Ubuntu:wght@500&family=Yanone+Kaffeesatz:wght@300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    align-items: left;
+    justify-content: center;
+    position: sticky;
+    top: 0;
+    cursor: pointer;
+}
+
+.background {
+    background: whitesmoke;
+    background-blend-mode: darken;
+    background-size: cover;
+}
+
+.nav-list {
+    width: 70%;
+    display: flex;
+    align-items: left;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+}
+
+.logo a{
+    margin-left: 20px;
+    color: #5e9cff;
+    text-decoration: none;
+    transition: 0.5s ease;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    font-size: 2rem;
+}
+
+.logo a:hover{
+    color: #7014fa;
+    font-size: 2.2rem;
+}
+
+.logo img {
+    width: 120px;
+    border-radius: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 20px;
+    transition: 0.5s ease;
+}
+
+.logo img:hover {
+    width: 130px;
+    border-radius: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 20px;
+}
+
+.nav-list li {
+    margin-top: 10px;
+    font-family: 'Ubuntu', sans-serif;
+    list-style: none;
+    padding: 26px 30px;
+}
+
+.nav-list li a {
+    text-decoration: blink;
+    color: #000000;
+    transition: 0.5s ease;
+}
+
+.nav-list li a:hover {
+    color: #5e9cff;
+    background-color: whitesmoke;
+    border-radius: 6px;
+    padding-top: 13px;
+    padding-bottom: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
+    text-decoration: none;
+}
+
+.nav-item {
+    display: flex;
+    margin-left: 40px;
+}
+
+.rightnav {
+    width: 30%;
+    text-align: right;
+}
+
+#search {
+    padding: 5px;
+    font-size: 17px;
+    border: 2px solid grey;
+    border-radius: 9px;
+}
+
+.firstsection {
+    background-color: lightskyblue;
+    height: 400px;
+    align-items: left;
+    font-size: 100px;
+    font-style: Blaka Hollow;
+}
+
+.secondsection {
+    height: 400px;
+    font-size: 1000px;
+    text-align: left;
+    background-color: lightblue;
+
+}
+
+
+
+.box-main {
+    display: flex;
+    justify-content: left;
+    align-items: left;
+    color: black;
+    max-width: 80%;
+    margin: auto;
+    height: 80%;
+    text-align: left;
+
+}
+
+.firsthalf {
+    width: 300%;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    font-size: 40px;
+
+}
+
+.secondhalf {
+    width: 30%;
+}
+
+.secondhalf img {
+    width: 100%;
+    border: 4px solid lightskyblue;
+    border-radius: 150px;
+    display: block;
+    margin: auto;
+    align-self: right;
+}
+
+.text-big {
+    font-family: 'Piazzolla', serif;
+    font-weight: bold;
+    font-size: 40px;
+    text-align: left;
+}
+
+.text-small {
+    font-size: 35px;
+    text-align: left;
+    font-family: 'Blaka', cursive;
+    color: purple;
+
+}
+
+.btn {
+    padding: 8px 20px;
+    margin: 7px 0;
+    border: 2px solid lightblue;
+    border-radius: 8px;
+    background: none;
+    color: lightskyblue;
+    cursor: pointer;
+}
+
+.btn-sm {
+    padding: 6px 10px;
+    vertical-align: middle;
+}
+
+.section {
+    height: 400px;
+    display: flex;
+    align-items: left;
+    justify-content: center;
+    max-width: 100%;
+    margin: auto;
+    background-color: lightblue;
+
+}
+
+
+.section-Left {
+    flex-direction: row-reverse;
+}
+
+.paras {
+    padding: 0px 65px;
+}
+
+.thumbnail img {
+    width: 250px;
+    border: 2px solid black;
+    border-radius: 26px;
+    margin-top: 19px;
+}
+.thumbnail{
+    background-color: lightblue;
+}
+
+.center {
+    text-align: center;
+}
+
+.text-footer {
+    text-align: center;
+    padding: 30px 0;
+    font-family: 'Ubuntu', sans-serif;
+    display: flex;
+    justify-content: center;
+    color: lightskyblue;
+}
+
+.footer {
+    background-color: #fafafa;
+    border-radius: 10px;
+    color: #14c0fa;
+}
+
+.footer hr{
+    border-color: #ffffff;
+    border-width: 1.25px;
+    opacity: 0.9;
+}
+
+.paragraph {
+    display: flex;
+    flex-direction: column;
+    font-family: 'IBM Plex Sans', sans-serif;
+    text-align: center;
+    padding-top: 30px;
+}
+
+.ending-title h3{
+    font-size: 1.9rem;
+}
+
+.creator h6{
+    padding-bottom: 5px;
+    font-size: 0.9rem;
+}
+
+.contacts {
+    display: flex;
+    flex-direction: row;
+}
+
+.contacts img{
+    height: 19px;
+    width: 27px;
+    margin-top: 3px;
+    margin-bottom: 2px;
+    background-color: white;
+    margin-right: 10px;
+    border-radius: 3px;
+}
+
+.contacts a{
+    font-family: 'IBM Plex Sans', sans-serif;
+    text-align: center;
+    margin-left: auto;
+    margin-right:auto;
+    text-decoration: underline;
+    color: #14c0fa;
+    font-size: 12px;
+    transition: 0.5s ease;
+    margin-up: 10px;
+    margin-bottom: 20px;
+}
+
+.contacts a:hover{
+    text-decoration: underline;
+    font-size: 0.8rem;
+}

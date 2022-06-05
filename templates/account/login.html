@@ -23,7 +23,7 @@
       <div class="content">
         <div class="sign-in">
           <h1 class="sign-in">{% trans "Sign In" %}</h1>
-
+          <hr>
           {% get_providers as socialaccount_providers %}
 
           {% if socialaccount_providers %}
@@ -43,20 +43,21 @@
               <a class="button secondaryAction" href="{% url 'account_reset_password' %}">{% trans "Forgot Password?" %}</a>
             </div>
             <div class="sign">
-              <button class="primaryAction btn btn-primary" type="submit" style="opacity: 1;">{% trans "Sign In" %}</button>
+              <button class="primaryAction sign-in-btn" type="submit" style="opacity: 1;">{% trans "Sign In" %}</button>
             </div>
           </div>
         </form>
         <hr>
+        <br>
         <div class="socialaccount_ballot">
+          <div class="google-background">
+            <img src="{% static 'images/google.png' %}">
+            <button type="button" class="socialaccount_providers g-signin2">
 
-          <button type="button" class="socialaccount_providers g-signin2">
-
-            {% include "socialaccount/snippets/provider_list.html" with process="login" %}
-          </button>
-
+              {% include "socialaccount/snippets/provider_list.html" with process="login" %}
+            </button>
+          </div>
           <!--<div class="login-or">{% trans 'or' %}</div>-->
-
         </div>
 
         {% include "socialaccount/snippets/login_extra.html" %}
@@ -65,18 +66,18 @@
         <p>{% blocktrans %}If you have not created an account yet, then please
         <a href="{{ signup_url }}">sign up</a> first.{% endblocktrans %}</p>
         {% endif %}
-
+        <br>
         {% if messages %}
         <div class="message">
-          <strong>Messages:</strong>
-          <ul>
-            {% for message in messages %}
-            <li>{{message}}</li>
-            {% endfor %}
-          </ul>
+          {% for message in messages%}
+            {% if forloop.last %}
+              <h5><strong>{{message}}</strong></h5>
+            {% endif %}
+          {% endfor %}
         </div>
+        <br>
         {% endif %}
-
+        <a href="../../" class="return">Return</a>
       </div>
     </div>
     <div class="col"></div>

@@ -1,0 +1,305 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@200&family=Lato:wght@300&family=Oswald:wght@500&family=Ubuntu:wght@500&family=Yanone+Kaffeesatz:wght@300&display=swap');
+
+$shadow: .3rem .3rem .6rem var(--greyLight-2), -.2rem -.2rem .5rem var(--white);
+$inner-shadow: inset .2rem .2rem .5rem var(--greyLight-2), inset -.2rem -.2rem .5rem var(--white);
+
+.navbar {
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    padding: 0.5rem 1rem;
+    background-color: #6bbcff;
+}
+
+.navbar-light .navbar-brand {
+    display: inline;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    font-size: 2.3rem;
+    font-weight: bold;
+    color: #2293f5;
+    text-decoration: none;
+    transition: 0.3s ease;
+}
+
+.navbar-brand {
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    display: inline-block;
+    padding-top: 0.3125rem;
+    padding-bottom: 0.3125rem;
+    margin-right: 1rem;
+    font-size: 1.25rem;
+    line-height: inherit;
+    white-space: nowrap;
+}
+
+#title:hover {
+    font-size: 2.4rem;
+    color: #227af5;
+}
+
+.navbar-nav a:hover{
+    color: #ffffff;
+    background-color: #5e9cff;
+    border-radius: 6px;
+    padding-top: 13px;
+    padding-bottom: 15px;
+    padding-left: 10px;
+    padding-right: 10px;
+    text-decoration: none;
+    transition: 0.5s ease;
+}
+
+.bg-light {
+    background-color: #ffffff!important;
+}
+
+.navbar-light .navbar-nav .active>.nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show>.nav-link {
+    color: #2293f5;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.navbar-light .navbar-nav .active>.nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show>.nav-link {
+    color: #2293f5;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.icon {
+
+}
+
+.icon a{
+    display: inline;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    font-size: 2.3rem;
+    font-weight: bold;
+    color: #2293f5;
+    margin-top: 80px;
+    margin-left: 2px;
+    padding-top: 80px;
+    text-decoration: none;
+    transition: 0.3s ease;
+}
+
+.icon a:hover{
+    font-size: 2.4rem;
+    color: #227af5!important;
+}
+
+#navbar ul{
+   background-color: #1eb5ff;
+   border-radius: 6px;
+   padding-top: 10px;
+   padding-bottom: 5px;
+   min-width: 75%;
+   text-align: right;
+}
+
+#navbar li{
+   display: inline;
+   padding-right: 30px;
+   text-align: center;
+   align: center;
+}
+
+#home-nav{
+    padding-left: 0px;
+}
+
+#navbar a{
+    color: #ffffff;
+    text-align: center;
+    transition: 0.5s ease;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+#navbar a:hover{
+    color: #5e9cff;
+    background-color: #ffffff;
+    border-radius: 6px;
+    padding-top: 13px;
+    padding-bottom: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
+    text-decoration: none;
+}
+
+#navbar h4{
+  font-size: 19px;
+}
+
+.display img{
+    width: 100%;
+    opacity: 0.95;
+    border-radius: 5px;
+    margin-top: -5px;
+    border-size: 2px;
+
+}
+
+.form-control {
+    display: block;
+    width: 100%;
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: 0.25rem;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+.between-section {
+    border-top: 2px solid #abacb8;
+    border-radius: 2px;
+    margin-left: 20px;
+    margin-right: 20px;
+    opacity: 0.5;
+}
+
+.reveal{
+    position: relative;
+    transform: translateY(150px);
+    opacity: 0;
+    transition: 2s all ease;
+}
+
+.reveal.active{
+    transform: translateY(0);
+    opacity: 1;
+}
+
+.reveal_l{
+    position: relative;
+    transform: translateX(150px);
+    opacity: 0;
+    transition: 2s all ease;
+}
+.reveal_l.active{
+    transform: translateY(0);
+    opacity: 1;
+}
+
+label {
+    display: inline-block;
+    margin-bottom: 0.5rem;
+    color: #2176ff;
+
+}
+
+.loan_form h1{
+    color: #706bff;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 60px;
+    font-weight: bold;
+    transition: 0.5s ease;
+}
+
+.loan_form h1:hover{
+    font-size: 70px;
+}
+
+.loan_form hr{
+    border-top: 3px solid #abacb8;
+    border-radius: 2px;
+}
+
+.loan_form h2{
+    color: #2293f5;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.btn-primary {
+    color: #fff;
+    background-color: #2176ff;
+    border-color: #d2d3d4;
+    border-width:1.5px;
+    margin-bottom: 10px;
+    transition: 0.3s ease;
+
+}
+
+.btn-primary:hover {
+    color: #2176ff;
+    background-color: #ffffff;
+
+    margin-bottom: 10px;
+
+    cursor: pointer;
+    background: linear-gradient(330deg, var(--primary-dark) 0%, var(--primary) 50%, var(--primary-light) 10%);
+
+}
+
+.footer {
+    background-image: linear-gradient(30deg, #1c4dff, #991cff);
+    border-radius: 6px;
+    color: #ffffff;
+}
+
+.footer hr{
+    border-color: #ffffff;
+    border-width: 1.25px;
+    opacity: 0.9;
+}
+
+.paragraph {
+    display: flex;
+    flex-direction: column;
+    font-family: 'IBM Plex Sans', sans-serif;
+    text-align: center;
+    padding-top: 30px;
+}
+
+.ending-title h3{
+    font-size: 1.9rem;
+}
+
+.creator h6{
+    padding-bottom: 5px;
+    font-size: 0.9rem;
+}
+
+.contacts {
+    display: flex;
+    flex-direction: row;
+}
+
+.contacts img{
+    height: 19px;
+    width: 27px;
+    margin-top: 3px;
+    margin-bottom: 2px;
+    background-color: white;
+    margin-right: 10px;
+    border-radius: 3px;
+}
+
+.contacts a{
+    font-family: 'IBM Plex Sans', sans-serif;
+    text-align: center;
+    margin-left: auto;
+    margin-right:auto;
+    text-decoration: underline;
+    color: #ffffff;
+    font-size: 12px;
+    transition: 0.5s ease;
+    margin-up: 10px;
+    margin-bottom: 20px;
+}
+
+.contacts a:hover{
+    text-decoration: underline;
+    font-size: 0.8rem;
+}

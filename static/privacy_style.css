@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Assistant:wght@300&family=IBM+Plex+Sans:wght@200&family=Lato:wght@300&family=Oswald:wght@500&family=Ubuntu:wght@500&family=Yanone+Kaffeesatz:wght@300&display=swap');
+
+.privacy {
+    padding-left: 20px;
+    padding-right: 10px;
+    font-family: 'Assistant';
+    margin-bottom: 40px;
+}
+
+.privacy img{
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    height: auto;
+
+}

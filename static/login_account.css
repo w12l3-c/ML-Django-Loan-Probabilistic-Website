@@ -1,0 +1,189 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Alfa+Slab+One&family=Assistant:wght@300&family=IBM+Plex+Sans:wght@200&family=Lato:wght@300&family=Noto+Sans+Display:wght@300;400&family=Odibee+Sans&family=Oswald:wght@500&family=Ubuntu:wght@500&family=Yanone+Kaffeesatz:wght@300&display=swap');
+
+* {
+    font-family: 'Noto Sans Display', sans-serif;
+}
+
+
+.login-place {
+    background: #ffffff;
+    border-radius: 10px;
+    opacity: 0.95;
+    margin: 20px;
+    margin-top: 90px;
+}
+
+.content {
+    text-align: center;
+}
+
+.content hr{
+    border-width: 1.5px;
+    border-radius: 4px;
+    border-color: #9ab5db;
+}
+
+.sign-in{
+    text-align: left;
+}
+
+.socialaccount_ballot {
+    text-align: center;
+}
+
+.google-background img{
+    max-width: 40px;
+    max-height: 40px;
+}
+
+.socialaccount_ballot h5{
+    text-align: left;
+    font-size: 1.3rem;
+    display:inline;
+}
+
+.socialaccount_ballot a{
+    color: #ffffff;
+    display: inline;
+    text-decoration: none;
+}
+
+.sign-in-btn{
+    color: #ffffff;
+    display: inline;
+    list-style-type: none;
+    border-radius: 5px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 8px;
+    padding-top: 8px;
+    border-width: 0px;
+    border-color: #ffffff;
+    background-image: linear-gradient(30deg, #108fe3, #3710e3);
+    transition: 0.5s ease;
+}
+
+.sign-in-btn:hover{
+    box-shadow: 4px 4px #d4d4d4;
+    padding-left: 24px;
+    padding-right: 24px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+}
+
+.socialaccount_ballot button{
+    color: #ffffff;
+    list-style-type: none;
+    border-radius: 5px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 8px;
+    padding-top: 8px;
+    border-width: 0px;
+    border-color: #ffffff;
+    background-image: linear-gradient(30deg, #fa680c, #faa30c, #f5ee1b);
+    transition: 0.5s ease;
+}
+
+.socialaccount_ballot button:hover{
+    box-shadow: 4px 4px #d4d4d4;
+    padding-left: 24px;
+    padding-right: 24px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+}
+
+.login-or{
+    font-size: 1.5rem;
+}
+
+.menu li{
+    color: white;
+    display: inline;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.content {
+    opacity: 1;
+    margin: 30px;
+    margin-bottom: 2px;
+    padding: 20px;
+}
+
+.login{
+    display: inline;
+    text-align: left;
+}
+
+.submit{
+    text-align: left;
+}
+
+label {
+    display: inline-block;
+    margin-bottom: 0.5rem;
+
+}
+
+.form-control {
+    display: block;
+    width: 100%;
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #1386f8;
+    border-radius: 0.25rem;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+.forget a{
+    transition: 0.3s ease;
+    font-size: 0.8rem;
+}
+
+.forget a:hover{
+    color: #5036d6;
+    font-size: 0.85rem;
+}
+
+.btn-primary {
+    color: #fff;
+    background-color: #007bff;
+    border-color: #007bff;
+    transition: 0.5s ease;
+}
+
+.btn-primary:hover {
+    color: #007bff;
+    background-color: #faffff;
+    border-color: #007bff;
+    padding-left: 12px;
+    padding-right: 12px;
+}
+
+.message {
+    text-align: center;
+}
+
+.message h5{
+    text-align: center;
+    font-size: 1.2rem;
+    color: #2374de;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.return{
+    transition: 0.3s ease;
+    font-size: 0.8rem;
+}
+
+.return:hover{
+    color: #5036d6;
+    font-size: 0.9rem;
+}
+
+

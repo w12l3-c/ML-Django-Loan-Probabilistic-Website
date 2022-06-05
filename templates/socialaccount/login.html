@@ -3,23 +3,48 @@
 {% load static %}
 {% load crispy_forms_tags %}
 {% block extra_head %}
-<link href="{% static 'login_account.css' %}" type="text/css" rel="stylesheet">
+<link href="{% static 'login_social_account.css' %}" type="text/css" rel="stylesheet">
 {% endblock %}
+{% block body %}
 {% block content %}
-{% if process == "connect" %}
-<h1>{% blocktrans with provider.name as provider %}Connect {{ provider }}{% endblocktrans %}</h1>
 
-<p>{% blocktrans with provider.name as provider %}You are about to connect a new third party account from {{ provider }}.{% endblocktrans %}</p>
-{% else %}
-<h1>{% blocktrans with provider.name as provider %}Sign In Via {{ provider }}{% endblocktrans %}</h1>
+<div class="container-fluid">
+  <div class="row">
+    <div class="col">
 
-<p>{% blocktrans with provider.name as provider %}You are about to sign in using a third party account from {{ provider }}.{% endblocktrans %}</p>
-{% endif %}
+    </div>
+    <div class="col-md-8 login-place">
+      <div class="content">
+        {% if process == "connect" %}
+        <h1>{% blocktrans with provider.name as provider %}Connect {{ provider }}{% endblocktrans %}</h1>
 
-<form method="post">
-  {% csrf_token %}
-  <button type="submit" class="g-login2">{% trans "Continue" %}</button>
-</form>
+        <p>{% blocktrans with provider.name as provider %}You are about to connect a new third party account from {{ provider }}.{% endblocktrans %}</p>
+        {% else %}
+        <h1>{% blocktrans with provider.name as provider %}Sign In Via {{ provider }}{% endblocktrans %}</h1>
 
+        <p>{% blocktrans with provider.name as provider %}You are about to sign in using a third party account from {{ provider }}.{% endblocktrans %}</p>
+        {% endif %}
+        <hr>
+        <div class="socialaccount_ballot">
+          <div class="google-background">
+            <img src="{% static 'images/google.png' %}">
+            <br>
+            <form method="post">
+              <br>
+              {% csrf_token %}
+              <button type="submit" class="g-login2 socialaccount_providers">Continue</button>
+            </form>
+          </div>
+        </div>
+        <br>
+        <a href="../../login/" class="return">Return</a>
+      </div>
+    </div>
+    <div class="col">
 
+    </div>
+  </div>
+</div>
+
+{% endblock %}
 {% endblock %}

@@ -1,0 +1,405 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Alfa+Slab+One&family=Assistant:wght@300&family=IBM+Plex+Sans:wght@200&family=Lato:wght@300&family=Odibee+Sans&family=Oswald:wght@500&family=Ubuntu:wght@500&family=Yanone+Kaffeesatz:wght@300&display=swap');
+{% load static %}
+
+.result_title h1{
+    color: #706bff;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 60px;
+    font-weight: bold;
+    transition: 0.5s ease;
+    text-align: center;
+}
+
+.result_title h1:hover{
+    font-size: 70px;
+}
+
+.result_title hr{
+    border-top: 3px solid #abacb8;
+    border-radius: 2px;
+}
+
+.failed{
+    margin: 20px;
+    border-radius: 3px;
+    border-style: solid;
+    border: 2px #d9f21f;
+}
+
+.failed h3{
+    font-family: 'Alfa Slab One', cursive;
+    text-align: center;
+    color: #e33952;
+    font-size: 8rem;
+    transition: 1.0s ease;
+    background-color: #ffffff;
+    border-radius: 3px;
+}
+
+.failed h3:hover{
+    font-family: 'Alfa Slab One', cursive;
+    text-align: center;
+    color: #f23f1f;
+    font-size: 8.3rem;
+}
+
+.failed h4{
+    text-align: center;
+    font-family: 'Odibee Sans', cursive;
+    font-size: 4rem;
+    color: #de602a;
+    transition: 0.5s ease;
+}
+
+.failed h4:hover{
+    text-align: center;
+    font-family: 'Odibee Sans', cursive;
+    font-size: 4.3rem;
+    color: #f2ba1f;
+}
+
+.failed_img {
+    background-image: linear-gradient(45deg, #de2f1f, #fafa48);
+    border-radius: 4px;
+}
+
+.failed_img img{
+    border-radius: 5px;
+    height: auto;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    display: block;
+}
+
+.failed_text {
+    text-align: center;
+    font-family: 'Assistant', sans-serif;
+}
+
+.failed_text hr{
+    border-width: 8px;
+    border-radius: 4px;
+    border-color: #dfe9f5;
+}
+
+.failed_text h3{
+    font-size: 3rem;
+}
+
+.failed_text h4{
+    font-size: 2rem;
+}
+
+.blockf_main {
+    display: flex;
+}
+
+.blockf {
+    flex-grow: 1;
+    flex-basis: | auto;
+    width: 33%;
+    margin: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 10px;
+    transition: 0.6s ease;
+    border-radius: 4px;
+}
+
+.blockf:hover {
+    flex-grow: 1;
+    flex-basis: | auto;
+    width: 40%;
+    margin: 15px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 10px;
+    box-shadow: 10px 10px #c7c5c5;
+}
+
+.blockf h4{
+    font-size: 2rem;
+    font-family: 'IBM Plex Sans', sans-serif;
+}
+
+.blockf hr{
+    border-width:  1.3px;
+    border-color: #ffffff;
+    border-radius: 1px;
+}
+
+.text {
+    text-align: left;
+}
+
+.text img{
+    max-width: 400px;
+    max-height: 200px;
+    text-align: center;
+    border-radius: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.text p{
+    text-align: left;
+    font-size: 1.0rem;
+    transition: 0.4s ease;
+}
+
+.text p:hover{
+    font-size: 1.1rem;
+}
+
+.text ul li{
+    margin-left: 15px;
+    text-align: left;
+    font-size: 1.0rem;
+    transition: 0.4s ease;
+    list-style-position: outside;
+}
+
+.text li:hover{
+    font-size: 1.1rem;
+}
+
+.important {
+    font-size: 1.4rem;
+    text-decoration: underline;
+}
+
+.ratio {
+    background-image: linear-gradient(135deg, #f52b18, #e3d214);
+    border-radius: 4px;
+    color: #ffffff;
+}
+
+.delinquency {
+    background-image: linear-gradient(25deg, #18f59d, #0d79fc);
+    border-radius: 4px;
+    color: #ffffff;
+}
+
+.delinquency hr{
+    border-color: #ffffff;
+}
+
+.resource {
+    background-image: linear-gradient(135deg, #e010d2, #4b51f2);
+    border-radius: 4px;
+    color: #ffffff;
+}
+
+.resource a{
+    color: #35ff08;
+    transition: 0.6s ease;
+}
+
+.resource a:hover{
+    font-size: 1.25rem;
+    color: #ffffff;
+}
+
+.thanks {
+    text-align: center;
+    font-family: 'Assistant', sans-serif;
+    margin-top: 25px;
+    margin-bottom: 5px;
+}
+
+.success{
+    margin: 20px;
+    border-radius: 3px;
+    border-style: solid;
+    border: 2px #d9f21f;
+}
+
+.success h3{
+    font-family: 'Alfa Slab One', cursive;
+    text-align: center;
+    color: #64b9fa;
+    font-size: 8rem;
+    transition: 1.0s ease;
+    background-color: #ffffff;
+    border-radius: 3px;
+}
+
+.success h3:hover{
+    font-family: 'Alfa Slab One', cursive;
+    text-align: center;
+    color: #6467fa;
+    font-size: 8.3rem;
+}
+
+.success h4{
+    text-align: center;
+    font-family: 'Odibee Sans', cursive;
+    font-size: 4rem;
+    color: #64fad7;
+    transition: 0.5s ease;
+}
+
+.success h4:hover{
+    text-align: center;
+    font-family: 'Odibee Sans', cursive;
+    font-size: 4.3rem;
+    color: #7cc0f7;
+}
+
+.success_img {
+    background-image: linear-gradient(45deg, #1ee89b, #1eb6e8);
+    border-radius: 4px;
+}
+
+.success_img img{
+    border-radius: 5px;
+    height: auto;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    display: block;
+}
+
+.success_text {
+    text-align: center;
+    font-family: 'Assistant', sans-serif;
+    margin: 20px;
+}
+
+.success_text hr{
+    border-width: 8px;
+    border-radius: 4px;
+    border-color: #dfe9f5;
+}
+
+.success_text h3{
+    font-size: 3rem;
+}
+
+.success_text h4{
+    font-size: 2rem;
+}
+
+.blocks_main {
+    display: block;
+}
+
+.blocks {
+    margin: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 10px;
+    padding-bottom: 30px;
+    transition: 0.6s ease;
+    border-radius: 4px;
+}
+
+.blocks:hover {
+    margin: 15px;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 10px;
+    box-shadow: 10px 10px #c7c5c5;
+}
+
+.blocks h4{
+    font-size: 3rem;
+    font-family: 'IBM Plex Sans', sans-serif;
+}
+
+.blocks hr{
+    border-width:  1.3px;
+    border-color: #ffffff;
+    border-radius: 1px;
+}
+
+.texts {
+    text-align: center;
+}
+
+.texts img{
+    text-align: center;
+    border-radius: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.texts img{
+    max-height: 400px;
+    text-align: center;
+    border-radius: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    margin-bottom: 10px;
+    transition: 0.5s ease;
+}
+
+.texts img:hover{
+    max-height: 425px;
+    box-shadow: 5px 5px #c7c5c5;
+}
+
+.texts p{
+    text-align: left;
+    font-size: 1.5rem;
+    transition: 0.4s ease;
+    margin: 20px;
+}
+
+.texts p:hover{
+    font-size: 1.55rem;
+}
+
+.texts ul li{
+    margin-left: 15px;
+    text-align: left;
+    font-size: 1.0rem;
+    transition: 0.4s ease;
+    list-style-position: outside;
+}
+
+.texts li:hover{
+    font-size: 1.1rem;
+}
+
+.no_problem{
+    background-image: linear-gradient(25deg, #fada28, #2ade5a);
+    border-radius: 4px;
+    color: #ffffff;
+    transition: 0.75s ease;
+}
+
+.problem {
+    background-image: linear-gradient(25deg, #2aded5, #110bd4);
+    border-radius: 4px;
+    color: #ffffff;
+}
+
+.delinquency hr{
+    border-color: #ffffff;
+}
+
+.resource {
+    background-image: linear-gradient(135deg, #e010d2, #4b51f2);
+    border-radius: 4px;
+    color: #ffffff;
+}
+
+.resource a{
+    color: #35ff08;
+    transition: 0.6s ease;
+}
+
+.resource a:hover{
+    font-size: 1.25rem;
+    color: #ffffff;
+}
+
