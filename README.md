@@ -14,7 +14,7 @@ For more information: [django official website](https://www.djangoproject.com/)
 To install all the required python packages for the computer to run, you can run the following code in your coding environment terminal.<br>
 `$pip install -r requirements.txt`
 <br><br>
-Some necessary files:
+Some necessary packages:
 - Django
 - Django Rest Framework
 - Django Allauth
