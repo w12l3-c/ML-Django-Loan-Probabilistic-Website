@@ -3,8 +3,7 @@ This project is made from machine learning model and python package Django to ma
 It is created as a school project and it will not serve any commerical purpose
 
 ## Model
-It is a Machine Learning Model that predicts whether a user is a safe or risky borrower.
-(Sriram finish this part please)
+A logistic regression model that uses various inputted features like user income, debt ratio, credit score, delinquency rate, etc. to predict if a bank will classify them as a safe or risky borrower. This model is realtively general and doesn't predict if a user will receive a particular loan for a particular amount from the bank. Instead, it serves a broader and arguably more important purpose - it tells the user how the bank assesses risk by giving them any loan. For instance, if they are predicted to be a risky borrower, they should expect to pay higher interest rates and have more loan applications turned down.
 
 ## Django
 Django is a Python Web Framework that can use python languages to build APIs, it is one of the most used python web framework along with Flask. It is also has a lot of other extension frameworks that help different aspects of development<br>
