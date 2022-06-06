@@ -7,7 +7,7 @@ A logistic regression model that uses various inputted features(from the loan fo
 
 There are also various other beta versions and unused versions of other models that serve varying purposes (predicting home loan approval, predicting peer-to-peer loan approval). These models use varying machine learning algorithms from logistic regression, to random forests, to neural networks. 
 
-Note: 'Model 2' and 'Model 3' under the Unused Models Folder under the Models Folder use 'Dataset 2.gzip'. This file was too large to upload to github and hence has not been uploaded. However, this dataset alone has been submittted to the google classroom folder (you must download this dataset and move it to the same location as 'Model 2' and 'Model 3' to access those two models).
+Note: 'Model 2' and 'Model 3' under the Unused Models Folder under the Models Folder use 'Dataset 2.gzip'. This file was too large to upload to github and hence has not been uploaded. However, you should still be able to view models 2 and 3, the EDA, feature engineering, and training and testing from the github page itself. These results will not be visible if you attempt to download them and run them locally. However, this isn't too important since 'Model 2' and 'Model 3' under the Unused Models Folder were not used.
 
 ## Django
 Django is a Python Web Framework that can use python languages to build APIs, it is one of the most used python web framework along with Flask. It is also has a lot of other extension frameworks that help different aspects of development<br>
