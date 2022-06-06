@@ -30,10 +30,12 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-(q5+oy+aavi_0e=53kx69(6s@t5a*v3_$5js#k5y^r941up&xg'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = ['https://loan-calculator-classifier.herokuapp.com/', '.herokuapp.com', '127.0.0.1']
 
+#
+# 'https://loan-calculator-classifier.herokuapp.com/', '.herokuapp.com', '127.0.0.1'
 # Application definition
 
 # Need clarification later
@@ -65,6 +67,8 @@ MIDDLEWARE = [
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
+
+CSRF_TRUSTED_ORIGINS = ["https://loan-calculator-classifier.herokuapp.com/form/", ]
 
 ROOT_URLCONF = 'mlearn.urls'
 
@@ -133,13 +137,14 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/4.0/howto/static-files/
 
 PROJECT_DIR = os.path.dirname(__file__)
-STATIC_URL = '/static/'
 
 STATICFILES_DIRS = [
-    BASE_DIR / 'static',
+    os.path.join(BASE_DIR, 'static')
 ]
 
-STATIC_ROOT = BASE_DIR / 'staticfiles-cdn'
+STATIC_URL = '/static/'
+
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 
 STATICFILES_STORAGE = "django.contrib.staticfiles.storage.StaticFilesStorage"
 

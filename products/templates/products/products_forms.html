@@ -64,7 +64,8 @@
                 <div class="col"></div>
                 <div class="col-8 my-4" style="text-align: left;">
                     <br><h2>Loan Form</h2><br>
-                    <form method = 'post' id="calculateForm"> {% csrf_token %}
+                    <form method = 'post' id="calculateForm">
+                        {% csrf_token %}
                         {{ form|crispy }}
                         <br>
                         <div class="submit_button">
