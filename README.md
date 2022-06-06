@@ -3,7 +3,7 @@ This project is made from machine learning model and python package Django to ma
 It is created as a school project and it will not serve any commerical purpose
 
 ## Model
-A logistic regression model that uses various inputted features like user income, debt ratio, credit score, delinquency rate, etc. to predict if a bank will classify them as a safe or risky borrower. This model is realtively general and doesn't predict if a user will receive a particular loan for a particular amount from the bank. Instead, it serves a broader and arguably more important purpose - it tells the user how the bank assesses risk by giving them any loan. For instance, if they are predicted to be a risky borrower, they should expect to pay higher interest rates and have more loan applications turned down.
+A logistic regression model that uses various inputted features(from the loan form on website) like user income, debt ratio, credit score, delinquency rate, etc. to predict if a bank will classify them as a safe or risky borrower. This model is realtively general and doesn't predict if a user will receive a particular loan for a particular amount from the bank. Instead, it serves a broader and arguably more important purpose - it tells the user how the bank assesses risk by giving them any loan. For instance, if they are predicted to be a risky borrower, they should expect to pay higher interest rates and have more loan applications turned down.
 
 There are also various other beta versions of other models that serve varying purposes (predicting home loan approval, predicting peer-to-peer loan approval). These models use varying machine learning algorithms from logistic regression, to random forests, to neural networks.
 
