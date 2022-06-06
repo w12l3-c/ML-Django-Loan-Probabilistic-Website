@@ -17,9 +17,12 @@ Some necessary packages:
 - Django
 - Django Rest Framework
 - Django Allauth
-- sklearn
 - numpy
 - pandas
+- matplotlib
+- seaborn
+- sklearn
+- tensorflow
 
 ## To run the project
 Procedure:
